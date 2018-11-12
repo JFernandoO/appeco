@@ -1,0 +1,49 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 100%;
+  }
+
+  mat-form-field {
+    padding: 5px 10px;
+    width: 90%;
+  }
+
+  .sticky-top {
+
+    top: 120px;
+ 
+}
+
+.form-control{
+  border:none;
+}
+
+
+  @media screen and (max-width: 570px) {
+    .panel-left {
+      padding: 26px 6px;
+      background-color: white;            
+      box-shadow: 0 4px 4px #ccc;            
+      -webkit-box-shadow: 0 4px 4px #ccc;            
+      width: 100%;
+      margin: 0px;
+      margin-top: 10px;
+    }
+  }
+
+@media screen and (min-width: 570px) {
+  .panel-left {
+      padding: 26px 6px;
+      background-color: white;            
+      box-shadow: 0 4px 4px #ccc;            
+      -webkit-box-shadow: 0 4px 4px #ccc; 
+      width: 100%;
+      margin: 0px;
+    }
+  }
+
+

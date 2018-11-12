@@ -1,0 +1,17 @@
+#silverfox {
+    /* Asignamos una altura mínima */
+    min-height: 400px;
+    
+    background-image: url('/assets/images/bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px 0px 0px 5px;
+    box-shadow: 0 4px 4px #ccc; 
+    -webkit-box-shadow: 0 4px 4px #ccc;
+  } 
+
+@media only screen and (max-width: 570px) {
+    .div_image{
+        display:none;
+    }
+}

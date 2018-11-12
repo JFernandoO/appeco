@@ -1,0 +1,45 @@
+<nav class="navbar navbar-light bg-lignt navbar-expand-md " style="background-color: white">
+        <div class="container">
+            <a class="navbar-brand" [routerLink]="['clean']">
+                <img src="../../../../assets/images/logo.png" width="32px"></a>
+                <button id="nav-btn" class="navbar-toggler ml-auto custom-toggler" type="button" 
+                  data-toggle="collapse" data-target="#navbarDiv" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarDiv">
+                <ul class="navbar-nav mr-auto">
+                    
+                    <li class="nav-item" routerLinkActive="active"  *ngIf="isActive">
+                        <a class="nav-link" [routerLink]="['clean']" >
+                            Create Order 
+                        </a>
+                    </li>
+                    <li class="nav-item" routerLinkActive="active">
+                        <a class="nav-link" [routerLink]="['contact']" >
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">                        
+                        <li class="nav-item" routerLinkActive="active" *ngIf="!isActive">
+                            <a class="nav-link" [routerLink]="['register']">
+                                <span class="glyphicon glyphicon-user"></span> Sign Up</a>
+                        </li>
+                        <li class="nav-item" routerLinkActive="active" *ngIf="!isActive" >
+                            <a class="nav-link" [routerLink]="['login']">
+                                <span class="glyphicon glyphicon-log-in">
+                            </span> Login</a>
+                        </li>
+                        <li class="nav-item" routerLinkActive="active" *ngIf="isActive">
+                            <a class="nav-link" [routerLink]="['login']">
+                                <span class="glyphicon glyphicon-log-in">
+                            </span> Logout</a>
+                        </li> 
+                        
+                      </ul>
+            </div>
+        </div>
+    </nav>
+
+
